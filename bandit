@@ -1,0 +1,78 @@
+#однорукий бандит
+
+puts "сколько лет? "
+age = gets.to_i
+puts "хотите играть? Y/N"
+answer = gets.strip.capitalize
+
+if answer == "Y" && age >= 18
+	puts "ok ДАВАЙ ИГРАТЬ НАХУЙ"
+	end
+
+	money = 300
+
+1000.times do
+
+	puts "введите Enter чтобы дернуть ручку"
+	gets
+
+	x = rand (0..9)
+	y = rand (0..9)
+	z = rand (0..9)
+puts "вам выпало: #{x}, #{y}, #{z}"
+money = money - 3
+
+if money <= 0
+	puts "деньги закончились"
+exit
+end
+
+	if x == 0 and y == 0 and z == 0
+		puts "ваш баланс = 0"
+		money = 0
+end
+		if x == 1 and y == 1 and z == 1
+		puts "вам зачислено 10 $"
+		money = money + 10
+end
+		if x == 2 and y == 2 and z == 2
+		puts "вам зачислено 20 $"
+		money = money + 20
+end
+		if x == 3 and y == 3 and z == 3
+		puts "вам зачислено 30 $"
+		money = money + 30
+end
+		if x == 4 and y == 4 and z == 4
+		puts "вам зачислено 40 $"
+		money = money + 40
+end
+		if x == 5 and y == 5 and z == 5
+		puts "вам зачислено 50 $"
+		money = money + 50
+end
+		if x == 6 and y == 6 and z == 6
+		puts "ваш выйгрыш уменьшается на половину ! ! !"
+		money = money / 2
+end
+		if x == 7 and y == 7 and z == 7
+		puts "вам зачислено 70 $"
+		money = money + 70
+end
+		if x == 8 and y == 8 and z == 8
+		puts "вам зачислено 10 $"
+		money = money + 80
+end
+			if x == 9 and y == 9 and z == 9
+		puts "вам зачислено 90 $"
+		money = money + 90
+end
+if x == 1 and y == 2 and z == 3
+		puts "вам зачислено 123 $"
+		money = money + 123
+end
+
+puts "осталось денег #{money} $"
+end
+
+
